@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker build -t muhnnadpv/loadgenerator:latest ."
+                        sh "docker build -t muhannadpv/loadgenerator:latest ."
                     }
                 }
             }
